@@ -6,7 +6,7 @@ from responseservice import ResponseService
 from dataservice import DataService
 
 # Example pdf
-pdf = 'files/ExplorersGuide.pdf'
+pdf = '../files/ExplorersGuide.pdf'
 
 data_service = DataService()
 
@@ -30,3 +30,9 @@ facts = data_service.search_redis(intents)
 # Get the answer
 answer = response_service.generate_response(facts, question)
 print(answer)
+"""
+output:
+Index dropped
+Loaded 96 documents in Redis search index with name: embeddings-index
+You can find treasure chests in enemy bases, secret corners of shrines, underwater, and at the top of towers. Use your Magnesis Rune to fish out treasure chests and be on the lookout for them as you explore Hyrule.
+"""
