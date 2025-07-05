@@ -3,3 +3,11 @@
 files/*
 */__pycache__/**
 **/*.pkl
+/.idea/.gitignore
+/.idea/git_toolbox_blame.xml
+/.idea/gpt_examples.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
