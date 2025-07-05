@@ -8,7 +8,7 @@ load_dotenv()
 client = OpenAI()
 
 # Open the video file or read from URL
-video = cv2.VideoCapture("files/video.mp4")
+video = cv2.VideoCapture("../files/video.mp4")
 
 # Extract the frames from the video
 base64Frames = []
@@ -28,7 +28,7 @@ images = [{"image": frame, "resize":768} for frame in base64Frames[2::3]]
 
 # Call the openai chat endpoint, with the GPT-4 vision model
 response = client.chat.completions.create(
-    model="gpt-4-vision-preview",
+    model="gpt-4o",
     max_tokens= 200,
     messages=[{"role": "user", "content": ["These are the frames from a video. Generate a two sentence summary.", *images]}    
     ])
