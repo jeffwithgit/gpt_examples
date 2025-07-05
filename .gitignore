@@ -1,6 +1,5 @@
 .env
 .venv
-files/*
 */__pycache__/**
 **/*.pkl
 /.idea/.gitignore

@@ -70,3 +70,11 @@ def run(user_question):
 
 
 print(run("I need the top 2 products where the price is less than 2.00"))
+"""
+output:
+[{'role': 'user', 'content': 'I need the top 2 products where the price is less than 2.00'}, ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_iozcEOkvDh9hyuSeVVJ0kNbE', function=Function(arguments='{"sql_query":"SELECT * FROM products WHERE price < 2.00 ORDER BY price LIMIT 2"}', name='find_product'), type='function')], refusal=None, annotations=[]), {'role': 'tool', 'content': '[{"name": "pen", "color": "blue", "price": 1.99}, {"name": "pen", "color": "red", "price": 1.78}]', 'tool_call_id': 'call_iozcEOkvDh9hyuSeVVJ0kNbE'}]
+The top 2 products where the price is less than $2.00 are:
+
+1. Blue pen - $1.99
+2. Red pen - $1.78
+"""

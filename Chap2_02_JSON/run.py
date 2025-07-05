@@ -18,3 +18,11 @@ response = client.chat.completions.create(
 
 # Extract the response
 print(response.choices[0].message.content)
+"""
+output:
+{
+  "color": ["blue", "red"],
+  "material": "leather",
+  "size": 7
+}
+"""

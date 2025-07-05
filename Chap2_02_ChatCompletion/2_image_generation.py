@@ -28,3 +28,11 @@ try:
 
 except Exception as e:
     print(f"发生错误: {e}")
+
+"""
+output:
+正在向DALL-E 3发送请求以生成图片...
+
+图片已生成！请访问以下URL查看或下载:
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-ICV333ZzeSCHCFXsUSiSEIst/user-EUlepbOlK6b56ErivArDFSYx/img-QQCHw7TZf7T3aeX4OAHyRPfq.png?st=2025-07-05T14%3A15%3A00Z&se=2025-07-05T16%3A15%3A00Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=475fd488-6c59-44a5-9aa9-31c4db451bea&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-04T18%3A21%3A07Z&ske=2025-07-05T18%3A21%3A07Z&sks=b&skv=2024-08-04&sig=iKVApDbBNyyJiTaJY53umcDleCqBBjmIegKdK55Whtc%3D
+"""

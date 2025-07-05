@@ -24,3 +24,7 @@ messages=[
 ])
 
 print(response.choices[0].message.content)
+"""
+output:
+Space complexity refers to the amount of memory space required by an algorithm to solve a problem as a function of the input size. It helps determine how much memory an algorithm needs to perform a task and is usually measured in terms of the amount of memory used in the worst-case scenario. Just like time complexity, space complexity can be expressed using Big O notation to describe the upper bound on the amount of memory used by an algorithm as the input size grows.
+"""

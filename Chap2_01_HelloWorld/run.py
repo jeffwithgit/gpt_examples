@@ -16,3 +16,7 @@ messages=[
 
 # Extract the response
 print(response.choices[0].message.content)
+"""
+output:
+Hello there! How are you doing today?
+"""

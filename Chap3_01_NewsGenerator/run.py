@@ -30,3 +30,7 @@ print(
     assist_journalist(
         ['The sky is blue', 'The grass is green'],
         'informal', 100, 'blogpost'))
+"""
+output:
+Hey there nature lovers! Have you ever stopped to appreciate the simple beauty of the world around us? The sky is always a stunning shade of blue, providing a perfect backdrop for fluffy white clouds to float across. And let's not forget about the grass, which is a lush and vibrant green that carpets the ground beneath our feet. These two natural elements never fail to bring a sense of peace and tranquility to our hectic lives. So next time you're feeling overwhelmed, just look up at the blue sky and down at the green grass - nature's calming colors are sure to make you feel better!
+"""

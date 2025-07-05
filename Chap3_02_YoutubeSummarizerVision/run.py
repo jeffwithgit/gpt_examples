@@ -35,3 +35,7 @@ response = client.chat.completions.create(
 
 
 print(response.choices[0].message.content)
+"""
+output:
+The video captures the Earth from space, transitioning from day to night with illuminated cities visible on the surface. This view highlights the planet's curvature and atmospheric effects as it rotates.
+"""
