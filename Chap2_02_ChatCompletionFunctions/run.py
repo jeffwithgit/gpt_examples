@@ -37,7 +37,7 @@ def run(user_question):
     # Send the question and available functions to GPT
     messages = [{"role": "user", "content": user_question}]
 
-    response = client.chat.completions.create(model="gpt-3.5-turbo-0613", messages=messages, tools=[{"type": "function", "function": function_find_product }])
+    response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, tools=[{"type": "function", "function": function_find_product }])
     response_message = response.choices[0].message
 
     # Append the assistant's response to the messages
@@ -62,8 +62,9 @@ def run(user_question):
             "tool_call_id": response_message.tool_calls[0].id,
         }
     )
+    print(messages)
     # Get a new response from GPT so it can format the function's response into natural language
-    second_response = client.chat.completions.create(model="gpt-3.5-turbo-0613",
+    second_response = client.chat.completions.create(model="gpt-3.5-turbo",
     messages=messages)
     return second_response.choices[0].message.content
 
