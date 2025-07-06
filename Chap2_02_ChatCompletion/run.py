@@ -1,9 +1,10 @@
 from dotenv import load_dotenv
+import httpx
 
 load_dotenv()
 from openai import OpenAI
 
-client = OpenAI()
+client = OpenAI(http_client=httpx.Client())
 
 # For GPT 3.5 Turbo, the endpoint is ChatCompletion
 response = client.chat.completions.create(model="gpt-3.5-turbo",
