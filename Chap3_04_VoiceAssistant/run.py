@@ -127,14 +127,23 @@ class Discussion:
 if __name__ == '__main__':
     discussion = Discussion()
 
-    gr.Interface(
-        theme=gr.themes.Soft(),
-        fn=discussion.discuss_from_audio,
-        live=True,
-        inputs=gr.Audio(sources="microphone", type="filepath"),
-        outputs="text").launch()
+    # gr.Interface(
+    #     theme=gr.themes.Soft(),
+    #     fn=discussion.discuss_from_audio,
+    #     live=True,
+    #     inputs=gr.Audio(sources="microphone", type="filepath"),
+    #     outputs="text").launch()
 
     # To use command line instead of Gradio, remove above code and use this instead:
-    # while True:
-    #     message = input('User: ')
-    #     print(f'Assistant: {discussion.discuss(message)}')
+    while True:
+        message = input('User: ')
+        print(f'Assistant: {discussion.discuss(message)}')
+
+"""
+output:
+User: email
+Assistant: I'm here to help you with email-related tasks. Could you please provide more details about the email you want to send, such as the subject, recipient, and what you would like to include in the body of the email?
+User: the subject is "Applying for a PTO", the recipient is "boss@gmail.com"  THe content of email is "I need a PTO to take care of my kids, please kindly approve, thank you!"
+DEBUG perform action=ACTION_WRITE_EMAIL | subject:Applying for a PTO, recipient:boss@gmail.com, message:I need a PTO to take care of my kids, please kindly approve, thank you!
+Assistant: The email to your boss with the subject "Applying for a PTO" has been sent successfully.
+"""
